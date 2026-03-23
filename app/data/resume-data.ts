@@ -9,7 +9,7 @@ export const resumeData: ResumeData = {
       "Software developer focused on building scalable web applications and distributed systems. I work with modern technologies to create efficient solutions for complex problems.",
       "Currently exploring peer-to-peer architectures, blockchain applications, and AI-powered platforms while contributing to open-source projects."
     ],
-    profileImage: "/avatar.avif"
+    profileImage: "/dp.webp"
   },
   socialLinks: [
     { 

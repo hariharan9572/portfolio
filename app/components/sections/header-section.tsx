@@ -18,7 +18,7 @@ export default function HeaderSection() {
         variants={itemVariants}
       >
         <motion.div
-          className="flex h-36 w-36 items-center justify-center overflow-hidden rounded-full"
+          className="w-26 h-26 rounded-full flex items-center justify-center"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         >
@@ -26,13 +26,13 @@ export default function HeaderSection() {
             <Image
               src={personalInfo.profileImage}
               alt={personalInfo.name}
-              width={144}
-              height={144}
-              className="h-36 w-36 rounded-full object-cover object-top"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-full"
               priority
             />
           ) : (
-            <div className="flex h-36 w-36 items-center justify-center rounded-full border border-neutral-200 bg-neutral-100 text-4xl font-semibold text-neutral-700">
+            <div className="w-24 h-24 rounded-full border border-neutral-200 bg-neutral-100 text-neutral-700 flex items-center justify-center text-3xl font-semibold">
               H
             </div>
           )}
