@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Software developer focused on building scalable web applications and distributed systems. I work with modern technologies to create efficient solutions for complex problems.",
     url: "https://hariharana.com",
     siteName: "Hariharan Portfolio",
-    images: ["/logo.png"],
+    images: ["/hari-favicon.svg"],
     locale: "en_US",
     type: "website",
   },
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "Hariharan | Software Engineer",
     description:
       "Software developer focused on building scalable web applications and distributed systems. I work with modern technologies to create efficient solutions for complex problems.",
-    images: ["/logo.png"],
+    images: ["/hari-favicon.svg"],
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico?v=2", type: "image/x-icon" },
     ],
-    apple: "/logo.png",
+    apple: "/hari-favicon.svg",
     shortcut: "/favicon.ico?v=2",
   },
   alternates: {
