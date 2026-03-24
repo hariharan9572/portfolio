@@ -10,19 +10,17 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const handleClick = () => {
-    window.open(project.url, "_blank", "noopener,noreferrer");
-  };
-
   return (
-    <motion.div
+    <motion.a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`cursor-pointer p-2  rounded-lg  ${ibmPlexSans.className}  transition-all group`}
       variants={projectVariants}
       whileHover={{
         backgroundColor: "#fdfdfd",
         transition: { duration: 0.2 },
       }}
-      onClick={handleClick}
     >
       <h3 className="text-neutral-900 font-medium text-sm mb-2 group-hover:underline underline-offset-2">
         {project.title}
@@ -30,6 +28,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <p className="text-neutral-600 text-sm leading-relaxed">
         {project.description}
       </p>
-    </motion.div>
+    </motion.a>
   );
 }

@@ -3,6 +3,9 @@ import "./lib/server-runtime-guard";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://hariharana.com";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,9 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hariharana.com"),
+  metadataBase: new URL(siteUrl),
   title: "Hariharan | Software Engineer & Full Stack Developer",
   description:
     "Software developer focused on building scalable web applications and distributed systems. I work with modern technologies to create efficient solutions for complex problems.",
@@ -41,25 +43,32 @@ export const metadata: Metadata = {
     "aws",
     "linux",
   ],
-  authors: [{ name: "Hariharan", url: "https://hariharana.com" }],
+  authors: [{ name: "Hariharan", url: siteUrl }],
   creator: "Hariharan",
   publisher: "Hariharan",
   openGraph: {
     title: "Hariharan | Software Engineer",
     description:
       "Software developer focused on building scalable web applications and distributed systems. I work with modern technologies to create efficient solutions for complex problems.",
-    url: "https://hariharana.com",
+    url: siteUrl,
     siteName: "Hariharan Portfolio",
-    images: ["/hari-favicon.svg"],
+    images: [
+      {
+        url: "/hari-logo.png",
+        width: 512,
+        height: 512,
+        alt: "Hariharan logo",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Hariharan | Software Engineer",
     description:
       "Software developer focused on building scalable web applications and distributed systems. I work with modern technologies to create efficient solutions for complex problems.",
-    images: ["/hari-favicon.svg"],
+    images: ["/hari-logo.png"],
   },
   robots: {
     index: true,
@@ -76,11 +85,11 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico?v=2", type: "image/x-icon" },
     ],
-    apple: "/hari-favicon.svg",
+    apple: "/hari-logo.png",
     shortcut: "/favicon.ico?v=2",
   },
   alternates: {
-    canonical: "https://hariharana.com",
+    canonical: siteUrl,
   },
 };
 

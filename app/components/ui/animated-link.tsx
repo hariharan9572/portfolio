@@ -17,8 +17,8 @@ export default function AnimatedLink({ link, index }: AnimatedLinkProps) {
       className="text-neutral-500 hover:text-neutral-900 transition-colors duration-200"
       variants={linkVariants}
       custom={index}
-      target={link.external ? '_blank' : '_self'}
-      rel={link.external ? 'noopener noreferrer' : ''}
+      target="_blank"
+      rel="noopener noreferrer"
       whileHover={{ y: -2 }}
       whileTap={{ y: 0 }}
     >
