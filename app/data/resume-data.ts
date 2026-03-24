@@ -41,47 +41,57 @@ export const resumeData: ResumeData = {
   skillGroups: [
     {
       title: 'Backend',
-      skills: ['Java', 'Spring', 'Spring Boot', 'Spring Security', 'REST APIs', 'JWT', 'Maven'],
+      skills: ['Java', 'Spring', 'Spring Boot', 'REST API', 'Webhooks', 'Maven'],
     },
     {
       title: 'Frontend',
-      skills: ['React.js', 'Next.js', 'Angular.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
+      skills: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vite', 'HTML', 'CSS', 'Axios'],
     },
     {
       title: 'Data & Infra',
       skills: ['PostgreSQL', 'MySQL', 'Firebase', 'AWS', 'Docker', 'Linux'],
     },
     {
-      title: 'Mobile & Automation',
-      skills: ['Kotlin', 'Python', 'Shell Scripting', 'Webhooks', 'MCP', 'AI/ML'],
+      title: 'Mobile & Search',
+      skills: ['Kotlin', 'XML', 'Python', 'Apache Lucene', 'MCP', 'AI/ML'],
     },
   ],
   personalProjects: [
     {
       title: 'Vectora',
-      description: 'Java 25 + Lucene search engine with index-first APIs, multi-source ingestion, and MCP tooling for agent retrieval.',
+      description: 'Java 25 + Maven search engine with Apache Lucene, multi-source ingestion, index-first APIs, and MCP retrieval tooling for agents.',
       url: 'https://github.com/mohanmca/Vectora',
     },
     {
-      title: 'FleetCore',
-      description: 'Transportation ERP/TMS with Spring Boot, JWT auth, React admin workflows, and operations-to-finance controls.',
-      url: 'https://github.com/hariharan9572/fleetcore-frontend',
+      title: 'Connect',
+      description: 'Full-stack community platform with secure auth, interest-based communities, threaded discussions, votes, and personalized feeds.',
+      url: 'https://github.com/hariharan9572/connect',
     },
     {
-      title: 'AI Commerce',
-      description: 'Spring Boot + React commerce platform with PGVector retrieval, Spring AI chat support, and AI-assisted product workflows.',
+      title: 'FleetCore',
+      description: 'Transportation ERP/TMS covering enquiry, dispatch, trip execution, POD, invoicing, and operations-to-finance workflow controls.',
+      url: 'https://github.com/hariharan9572/fleetcore',
+    },
+    {
+      title: 'E-Commerce',
+      description: 'AI-powered commerce platform with Spring Boot, React/Vite, PGVector retrieval, semantic search, and AI-assisted product workflows.',
       url: 'https://github.com/hariharan9572/springEcom',
+    },
+    {
+      title: 'JobApp',
+      description: 'Server-rendered Java and Spring Boot job portal with MVC structure, form handling, and dynamic job listings by role and tech stack.',
+      url: 'https://github.com/hariharan9572/JobApp',
     },
   ],
   clientProjects: [
     {
       title: 'Droptruck',
-      description: 'Production logistics platform work covering lead ingestion, live tracking, call masking, WhatsApp messaging, and reliability improvements.',
+      description: 'Production logistics platform work covering lead ingestion, WhatsApp messaging, live tracking, call masking, and reliability improvements.',
       url: 'https://droptruck.in/',
     },
     {
       title: 'Drop Trucker',
-      description: 'Kotlin and Firebase Android app for trip lifecycle management, bidding, geofenced status updates, and POD workflows.',
+      description: 'Kotlin and Firebase Android driver app covering bidding, trip confirmation, geofenced status updates, POD uploads, alerts, and live operations.',
       url: 'https://play.google.com/store/apps/details?id=com.droptruck.haulers&hl=en_IN',
     },
   ],
