@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./lib/server-runtime-guard";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
